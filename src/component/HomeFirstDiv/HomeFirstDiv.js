@@ -6,6 +6,14 @@ class HomeFirstDiv extends Component {
   render() {
     return (
       <div>
+        <button
+          onClick={() => {
+            this.props.setAge({ age: 75 });
+          }}
+        >
+          Change name to Anthony
+        </button>
+        <h1>{this.props.myname}</h1>
         <h2>Build amazing things</h2>
         <p>
           Essential JavaScript development tools that help you go to market
